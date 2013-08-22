@@ -2,6 +2,8 @@ require "bones/rails/version"
 
 module Bones
   module Rails
-    # Your code goes here...
+    class Engine < Rails::Engine
+      # auto wire
+    end
   end
 end

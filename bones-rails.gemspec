@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Bones::Rails::VERSION
   spec.authors       = ["Sean Davis"]
   spec.email         = ["sdavis@topicdesign.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = ""
+  spec.summary       = ""
   spec.homepage      = ""
   spec.license       = "MIT"
 
