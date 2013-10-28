@@ -1,0 +1,111 @@
+nav.top, div.top-nav {
+  width: 100%;
+  background: $primary;
+  overflow: hidden;
+  ul {
+    @include horizontal-nav-core(
+      $nav-tb-background,
+      $nav-tb-color,
+      $nav-tb-background-hover,
+      $nav-tb-color-hover,
+      $nav-tb-padding,
+      $nav-tb-font-size
+    );
+    float: left;
+    &.right {
+      float: right;
+    }
+  }
+  &.secondary {
+    background: $primary-light;
+    ul > li {
+      a {
+        color: $primary;
+        i, span {
+          color: $primary;
+        }
+        &:hover, &.active {
+          background: $primary;
+          color: $accent-light;
+          i, span {
+            background: $primary;
+            color: $accent-light;
+          }
+        }
+      }
+    }
+  }
+}
+
+nav.horizontal, div.horizontal-nav {
+  ul {
+    @include horizontal-nav-core(
+      $nav-h-background,
+      $nav-h-color,
+      $nav-h-background-hover,
+      $nav-h-color-hover,
+      $nav-h-padding,
+      $nav-h-font-size
+    );
+  }
+}
+
+nav.vertical, nav {
+  ul {
+    @include nav-core();
+    li {
+      a {
+        display: block;
+        padding: $nav-v-padding;
+        font-size: $nav-v-font-size;
+        background: $nav-v-background;
+        color: $nav-v-color;
+        &:hover, &.active {
+          text-decoration: none;
+          background: $nav-v-background-hover;
+          color: $nav-v-color-hover;
+          span, i {
+            background: $nav-v-background-hover;
+            color: $nav-v-color-hover;
+          }
+        }
+        span, i {
+          margin-right: 10px;
+          background: $nav-v-background;
+          color: $nav-v-color;
+        }
+      }
+    }
+  }
+}
+
+ul.filter {
+  @include horizontal-nav-core(
+    $nav-f-background,
+    $nav-f-color,
+    $nav-f-background-hover,
+    $nav-f-color-hover,
+    $nav-f-padding,
+    $nav-f-font-size
+  );
+}
+
+ul.breadcrumb {
+  @include horizontal-nav-core(
+    $nav-b-background,
+    $nav-b-color,
+    $nav-b-background-hover,
+    $nav-b-color-hover,
+    $nav-b-padding,
+    $nav-b-font-size
+  );
+  li {
+    &:after {
+      content: $nav-b-separator;
+      color: $accent-light-darker;
+    }
+    &:last-child:after {
+      content: "";
+    }
+  }
+}

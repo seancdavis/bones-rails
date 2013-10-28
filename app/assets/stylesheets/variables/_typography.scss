@@ -1,0 +1,61 @@
+// apply to all headings
+$heading-margin: $default-margin;
+$heading-color: $font;
+$heading-caps: false;
+$heading-font-weight: 600;
+
+// individual headings
+$h1-font-size: 2.75em;
+$h2-font-size: 2.4em;
+$h3-font-size: 2.05em;
+$h4-font-size: 1.7em;
+$h5-font-size: 1.35em;
+$h6-font-size: 1.0em;
+
+// subheadings
+$subheading-color: $accent-dark-lightest;
+$subheading-font-weight: 200;
+$subheading-size-factor: 0.75;
+
+// small headings
+$heading-small-factor: 60%;
+$heading-small-color: $subheading-color;
+
+// body copy
+$paragraph-font: $default-font-size;
+$paragraph-font-weight: $default-font-weight;
+$paragraph-margin: $default-margin;
+$paragraph-line-height: $default-line-height;
+$paragraph-color: $font;
+
+// blockquotes
+$blockquote-padding: 0.25em 0.75em;
+$blockquote-margin: $default-margin;
+$blockquote-background: $accent-light;
+$blockquote-border-left: 7.5px solid $accent-light-dark;
+$blockquote-font-size: $default-font-size;
+
+// links
+$link-color: $primary;
+$link-underline: false;
+$link-hover-color: $primary-darker;
+$link-hover-underline: false;
+
+// individual characters
+$small-font-factor: 60%;
+$big-font-factor: 140%;
+$strong-font-weight: 600;
+
+// unordered lists
+$ul-margin-left-level-1: -20px;
+$ul-margin-left-level-2: 0;
+$ul-style-type: disc;
+$ul-line-height: 1.5;
+
+// ordered lists
+$ol-margin-left-level-1: $ul-margin-left-level-1;
+$ol-margin-left-level-2: $ul-margin-left-level-2;
+$ol-line-height: $ul-line-height;
+
+// horizontal lists
+$ul-h-padding: 0.5em 1.25em;
