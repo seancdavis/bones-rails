@@ -3,7 +3,7 @@ require 'rails/generators'
 module Rails
   module Generators
     class InstallGenerator < Rails::Generators::Base
-      #source_root File.join(File.dirname(__FILE__), 'templates')
+       #source_root File.expand_path('../templates', __FILE__)
 
       def add_assets
         prepend_to_file "app/assets/stylesheets/application#{detect_css_format[0]}", "#{detect_css_format[1]} require bones_config\n"
