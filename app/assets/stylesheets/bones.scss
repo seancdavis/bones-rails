@@ -15,59 +15,58 @@ docs on using files coming ...
 --------------------------
 VENDOR ASSETS
 -------------------------- */
-@import 'compass';
-@import 'vendor/normalize'; // normalizes for cross-browser consistency
+@import 'bones/vendor/normalize'; // normalizes for cross-browser consistency
 
 /*
 --------------------------
 VARIABLES
 -------------------------- */
-@import 'variables/colors';
-@import 'variables/globals';
-@import 'variables/grid';
-@import 'variables/typography';
-@import 'variables/code';
-@import 'variables/buttons';
-@import 'variables/forms';
-@import 'variables/tables';
-@import 'variables/nav';
-@import 'variables/images';
-@import 'variables/helpers';
+@import 'bones/variables/colors';
+@import 'bones/variables/globals';
+@import 'bones/variables/grid';
+@import 'bones/variables/typography';
+@import 'bones/variables/code';
+@import 'bones/variables/buttons';
+@import 'bones/variables/forms';
+@import 'bones/variables/tables';
+@import 'bones/variables/nav';
+@import 'bones/variables/images';
+@import 'bones/variables/helpers';
 
 /*
 --------------------------
 MIXINS
 -------------------------- */
-@import 'mixins/globals';
-@import 'mixins/grid';
-@import 'mixins/typography';
-@import 'mixins/buttons';
-@import 'mixins/forms';
-@import 'mixins/nav';
+@import 'bones/mixins/globals';
+@import 'bones/mixins/grid';
+@import 'bones/mixins/typography';
+@import 'bones/mixins/buttons';
+@import 'bones/mixins/forms';
+@import 'bones/mixins/nav';
 
 /*
 --------------------------
 PARTIALS
 -------------------------- */
-@import 'partials/globals';
-@import 'partials/grid';
-@import 'partials/typography';
-@import 'partials/code';
-@import 'partials/buttons';
-@import 'partials/forms';
-@import 'partials/tables';
-@import 'partials/nav';
-@import 'partials/images';
-@import 'partials/components';
+@import 'bones/partials/globals';
+@import 'bones/partials/grid';
+@import 'bones/partials/typography';
+@import 'bones/partials/code';
+@import 'bones/partials/buttons';
+@import 'bones/partials/forms';
+@import 'bones/partials/tables';
+@import 'bones/partials/nav';
+@import 'bones/partials/images';
+@import 'bones/partials/components';
 
 /*
 --------------------------
 HELPERS
 -------------------------- */
-@import 'helpers/margin';
-@import 'helpers/padding';
-@import 'helpers/positioning';
-@import 'helpers/color';
-@import 'helpers/background';
-@import 'helpers/border';
-@import 'helpers/size';
+@import 'bones/helpers/margin';
+@import 'bones/helpers/padding';
+@import 'bones/helpers/positioning';
+@import 'bones/helpers/color';
+@import 'bones/helpers/background';
+@import 'bones/helpers/border';
+@import 'bones/helpers/size';
