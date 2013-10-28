@@ -1,12 +1,15 @@
-require 'rails/generators'
+# encoding: utf-8
+#require 'rails/generators'
 
-module Rails
+module Bones
   module Generators
     class InstallGenerator < Rails::Generators::Base
        #source_root File.expand_path('../templates', __FILE__)
+       
+       desc "This is the description"
 
-      def add_assets
-        prepend_to_file "app/assets/stylesheets/application#{detect_css_format[0]}", "#{detect_css_format[1]} require bones_config\n"
+       def add_assets
+         prepend_to_file "app/assets/stylesheets/application#{detect_css_format[0]}", "#{detect_css_format[1]} require bones_config\n"
         
         #insert_into_file "app/assets/javascripts/application#{detect_js_format[0]}", "#{detect_js_format[1]} require foundation\n", :after => "jquery_ujs\n"
         #append_to_file "app/assets/javascripts/application#{detect_js_format[0]}", "\n$(function(){ $(document).foundation(); });\n"

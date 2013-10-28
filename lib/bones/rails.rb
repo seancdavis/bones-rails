@@ -1,8 +1,7 @@
 require "bones/rails/version"
+require "bones/generators/install_generator"
 
 module Bones
-  module Rails
-    class Engine < ::Rails::Engine
-    end
+  class Engine < ::Rails::Engine
   end
 end
