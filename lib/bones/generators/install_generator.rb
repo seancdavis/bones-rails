@@ -1,5 +1,5 @@
 # encoding: utf-8
-#require 'rails/generators'
+require 'rails/generators'
 
 module Bones
   module Generators
@@ -9,7 +9,7 @@ module Bones
        desc "This is the description"
 
        def add_assets
-         prepend_to_file "app/assets/stylesheets/application#{detect_css_format[0]}", "#{detect_css_format[1]} require bones_config\n"
+         prepend_to_file "app/assets/stylesheets/application.scss", "@import 'bones_config';\n@import 'bones';\n"
         
         #insert_into_file "app/assets/javascripts/application#{detect_js_format[0]}", "#{detect_js_format[1]} require foundation\n", :after => "jquery_ujs\n"
         #append_to_file "app/assets/javascripts/application#{detect_js_format[0]}", "\n$(function(){ $(document).foundation(); });\n"
