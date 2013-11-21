@@ -9,12 +9,12 @@ module Bones
        desc "This is the description"
 
        def add_assets
-         prepend_to_file "app/assets/stylesheets/application.scss", "@import 'bones_config';\n@import 'bones';\n"
+         prepend_to_file "app/assets/stylesheets/application.scss", "@import 'bones';\n"
         
         #insert_into_file "app/assets/javascripts/application#{detect_js_format[0]}", "#{detect_js_format[1]} require foundation\n", :after => "jquery_ujs\n"
         #append_to_file "app/assets/javascripts/application#{detect_js_format[0]}", "\n$(function(){ $(document).foundation(); });\n"
-        #settings_file = File.join(File.dirname(__FILE__),"..","..","..","scss","foundation","_variables.scss")
-        #create_file "app/assets/stylesheets/foundation_and_overrides.scss", File.read(settings_file)
+        settings_file = File.join(File.dirname(__FILE__),"..","..","..","bones_config.scss")
+        create_file "app/assets/stylesheets/bones_config.scss", File.read(settings_file)
         #append_to_file "app/assets/stylesheets/foundation_and_overrides.scss", "\n@import 'foundation';\n"
         #insert_into_file "app/assets/stylesheets/application#{detect_css_format[0]}", "#{detect_css_format[1]} require foundation_and_overrides\n", :after => "require_self\n"
       end
