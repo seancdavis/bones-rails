@@ -1,1 +1,262 @@
-/* Hello World */
+// buttons
+$button-color: $accent-light;
+$button-background-color: $primary;
+$button-hover-background-color: $primary-dark;
+$button-active-background-color: $primary-darker;
+
+// default styles
+$button-border: none;
+$button-padding: 0.65em 1em;
+$button-margin: $default-margin;
+$button-font-size: $default-font-size;
+
+// size
+$button-huge-font-size: 200%;
+$button-large-font-size: 150%;
+$button-small-font-size: 75%;
+
+// code
+$code-font-family: Consolas, monospace;
+$code-color: $code;
+$code-font-size: 12px;
+$code-background: $accent-light;
+$code-padding: 1px 2px;
+$code-border: $accent-light-dark;
+
+// code block
+$code-block-margin: 1.25em 0;
+$code-block-padding: 1.25em 0.75em;
+$code-block-font-family: $code-font-family;
+$code-block-color: $font;
+$code-block-background: $accent-light;
+$code-block-border: $accent-light-dark;
+$code-block-font-size: 13px;
+$code-block-line-height: 19px;
+
+// palette
+$primary: #1D9BC7; // blue
+$accent-1: #E05432; // red/orange
+$accent-2: #168719; // green
+$accent-dark: #444444; // dark
+$accent-light: #efefef; // light
+
+$warning: #CCA300;
+$danger: #CC0000;
+$success: #008A2E;
+
+// tones
+$primary-light:     #6BCEF0;
+$primary-lighter:   #AEE4F5;
+$primary-lightest:  lighten(#AEE4F5, 5%);
+$primary-dark:      darken($primary, 5%);
+$primary-darker:    darken($primary, 15%);
+$primary-darkest:   darken($primary, 25%);
+
+$accent-1-light:     lighten($accent-1, 5%);
+$accent-1-lighter:   lighten($accent-1, 15%);
+$accent-1-lightest:  lighten($accent-1, 25%);
+$accent-1-dark:      darken($accent-1, 5%);
+$accent-1-darker:    darken($accent-1, 15%);
+$accent-1-darkest:   darken($accent-1, 25%);
+
+$accent-2-light:     lighten($accent-2, 5%);
+$accent-2-lighter:   lighten($accent-2, 15%);
+$accent-2-lightest:  lighten($accent-2, 25%);
+$accent-2-dark:      darken($accent-2, 5%);
+$accent-2-darker:    darken($accent-2, 15%);
+$accent-2-darkest:   darken($accent-2, 25%);
+
+$accent-dark-light:     lighten($accent-dark, 5%);
+$accent-dark-lighter:   lighten($accent-dark, 15%);
+$accent-dark-lightest:  lighten($accent-dark, 25%);
+
+$accent-light-dark:      darken($accent-light, 5%);
+$accent-light-darker:    darken($accent-light, 15%);
+$accent-light-darkest:   darken($accent-light, 25%);
+
+$success-dark:      darken($success, 5%);
+$success-darker:    darken($success, 15%);
+$success-darkest:   darken($success, 25%);
+
+$warning-dark:      darken($warning, 5%);
+$warning-darker:    darken($warning, 15%);
+$warning-darkest:   darken($warning, 25%);
+
+$danger-dark:      darken($danger, 5%);
+$danger-darker:    darken($danger, 15%);
+$danger-darkest:   darken($danger, 25%);
+
+// groups
+$font: $accent-dark;
+$code: $accent-1;
+$shadow: $accent-light;
+
+$form-margin: $default-margin;
+$form-width: 100%;
+$form-box-sizing: border-box;
+$form-border: 1px solid $accent-light-darker;
+$form-focus-outline: none;
+$form-focus-border: 1px solid $primary;
+$form-input-padding: 4px;
+$form-radio-margin: 0 0 0.5em 0;
+
+$form-fieldset-border: 1px solid $accent-light-darker;
+$form-fieldset-legend-font-weight: 600;
+$form-fieldset-legend-padding: 0 5px;
+
+// ALL SIZING IS RELATIVE TO THIS VALUE
+$default-font-size: 16px;
+
+$default-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$default-font-weight: 200;
+$default-line-height: 1.25em;
+$default-color: $font;
+$default-margin: 0.75em 0;
+
+$hr-color: $accent-light-dark;
+$hr-height: 1px;
+$hr-margin: $default-margin;
+
+$container-width: 1200px;
+$container-padding: 20px;
+
+$grid-cols: 12;
+$grid-col-margin: 0.5%;
+$grid-col-padding: 0.5%;
+$grid-col-margin-top-bottom: 0.5%;
+$grid-col-padding-top-bottom: 0.5%;
+
+// margin
+$margin-small: 0.25em;
+$margin-medium: 0.5em;
+$margin-large: 0.75em;
+
+// padding
+$padding-small: 0.5em;
+$padding-medium: 1em;
+$padding-large: 1.5em;
+
+// sizes
+$img-thumb-width: 100px;
+$img-medium-width: 250px;
+$img-large-width: 400px;
+
+// border and outlines
+$img-outline-color: $accent-light-dark;
+$img-frame-width: 0.5em;
+$img-polaroid-frame-width: 0.75em;
+$img-polaroid-bottom-width: 2.75em;
+
+// panoramic
+$img-panoramic-height: 200px;
+
+// top bar
+$nav-tb-padding: 0.5em 1.25em;
+$nav-tb-font-size: 1.1em;
+$nav-tb-background: transparent;
+$nav-tb-color: $primary-light;
+$nav-tb-background-hover: transparent;
+$nav-tb-color-hover: $accent-light;
+
+// horizontal
+$nav-h-padding: $nav-tb-padding;
+$nav-h-font-size: $nav-tb-font-size;
+$nav-h-background: transparent;
+$nav-h-color: $primary;
+$nav-h-background-hover: $primary;
+$nav-h-color-hover: $accent-light;
+
+// vertical
+$nav-v-padding: 0.5em;
+$nav-v-font-size: 1em;
+$nav-v-background: transparent;
+$nav-v-color: $accent-light-darkest;
+$nav-v-background-hover: transparent;
+$nav-v-color-hover: $primary;
+
+// filters
+$nav-f-padding: 0.5em;
+$nav-f-font-size: 0.9em;
+$nav-f-background: transparent;
+$nav-f-color: $primary;
+$nav-f-background-hover: $primary;
+$nav-f-color-hover: $accent-light;
+
+// breadcrumbs
+$nav-b-padding: 0.5em;
+$nav-b-font-size: 0.9em;
+$nav-b-background: transparent;
+$nav-b-color: $primary-light;
+$nav-b-background-hover: transparent;
+$nav-b-color-hover: $primary;
+$nav-b-separator: " \002F ";
+
+$table-width: 100%;
+$table-border: 1px solid $accent-light-darker;
+$table-cell-padding: 5px 10px;
+$table-header-background: $primary;
+$table-header-color: $accent-light;
+$table-header-font-weight: 400;
+$table-cell-accent-background: $accent-light;
+
+// apply to all headings
+$heading-margin: $default-margin;
+$heading-color: $font;
+$heading-caps: false;
+$heading-font-weight: 600;
+
+// individual headings
+$h1-font-size: 2.75em;
+$h2-font-size: 2.4em;
+$h3-font-size: 2.05em;
+$h4-font-size: 1.7em;
+$h5-font-size: 1.35em;
+$h6-font-size: 1.0em;
+
+// subheadings
+$subheading-color: $accent-dark-lightest;
+$subheading-font-weight: 200;
+$subheading-size-factor: 0.75;
+
+// small headings
+$heading-small-factor: 60%;
+$heading-small-color: $subheading-color;
+
+// body copy
+$paragraph-font: $default-font-size;
+$paragraph-font-weight: $default-font-weight;
+$paragraph-margin: $default-margin;
+$paragraph-line-height: $default-line-height;
+$paragraph-color: $font;
+
+// blockquotes
+$blockquote-padding: 0.25em 0.75em;
+$blockquote-margin: $default-margin;
+$blockquote-background: $accent-light;
+$blockquote-border-left: 7.5px solid $accent-light-dark;
+$blockquote-font-size: $default-font-size;
+
+// links
+$link-color: $primary;
+$link-underline: false;
+$link-hover-color: $primary-darker;
+$link-hover-underline: false;
+
+// individual characters
+$small-font-factor: 60%;
+$big-font-factor: 140%;
+$strong-font-weight: 600;
+
+// unordered lists
+$ul-margin-left-level-1: -20px;
+$ul-margin-left-level-2: 0;
+$ul-style-type: disc;
+$ul-line-height: 1.5;
+
+// ordered lists
+$ol-margin-left-level-1: $ul-margin-left-level-1;
+$ol-margin-left-level-2: $ul-margin-left-level-2;
+$ol-line-height: $ul-line-height;
+
+// horizontal lists
+$ul-h-padding: 0.5em 1.25em;
