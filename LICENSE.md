@@ -1,4 +1,4 @@
-Copyright (c) 2013 Sean Davis
+Copyright (c) 2013 Sean C. Davis
 
 MIT License
 
