@@ -1,46 +1,67 @@
 # Bones for Rails
 
-Bones for Rails packages up the current build of Bones CSS Framework and inserts it into the asset pipeline to help streamline the design of your application.
+Bones for Rails packages the current build of [Bones CSS Framework](https://github.com/rocktreedesign/bones) 
+and inserts applicable portions of it into the asset pipeline to help streamline the 
+design of your application.
 
-## WARNING
+## Bones Documentation
 
-Please note that Bones is still undergoing a rewrite, and Bones for Rails follows right behind it. Bones will be documented after the rewrite is complete.
+A documentation website for Bones is in the works. For now, all documentation for the framework itself can be found 
+[here](https://github.com/rocktreedesign/bones/tree/master/docs).
 
 ## Getting Started
 
 Add this line to your application's Gemfile:
 
-    gem 'bones-rails'
+```ruby
+gem 'bones-rails'
+```
 
 Install using:
 
-    $ bundle install
+```bash
+$ bundle install
+```
 
 Or install it to your system:
 
-    $ gem install bones-rails
+```bash
+$ gem install bones-rails
+```
+
+> If you prefer to have more control over Bones, I'd suggest checking out the [SCSS method of installation](https://github.com/rocktreedesign/bones/blob/master/docs/getting-started/installation.md). This installation of Bones is optimized for use in Ruby on Rails projects.
 
 ## Usage
 
 We can add the necesasry files to the asset pipeline by running:
 
-    $ rails g bones:install
+```bash
+$ rails g bones:install
+```
 
-The installation generator performs two tasks:
+The installation generator performs a number of tasks you should be aware of:
 
-### 1. Manifest File
+### 1. application.scss
 
-It adds the following line to the top of your `application.scss` file:
+Bones requires that you use the `.scss` extension for your application stylesheet (your manifest file). If it detects anything other than `application.scss`, 
+it will change the filename to `application.scss`
 
-    @import 'bones';
+Once we're sure `application.scss` exists, the generator adds the following line to the top of your `application.scss` file:
 
-Note: this requires your application stylesheet to use the sass file extension -- `.scss`.
+```scss
+@import 'bones/bones';
+```
 
-### 2. Configuration File
+### 2. Controller
 
-The generator also creates a file: `app/assets/stylesheets/bones_config.scss`. This file comes equipped with all the variables available in the Bones framework.
+The controller (or manifest file) for Bones is `bones.scss`. This is where you configure which modules you'd like to load. First, we create a new directory: 
+`app/assets/stylesheets/bones`. Then we place the new configuration file into this directory: `app/assets/stylesheets/bones/bones.scss`.
 
-This file is loaded from the Bones manifest file. Therefore, it must remain in the exact location with the same filename.
+### 3. Bones Configuration Files
+
+Last, we add all the configuration files to a new directory: `app/assets/stylesheets/bones/bones-config`.
+
+In this directory is where you can configure Bones to your liking and see it change when you refresh your browser.
 
 ## Contributing
 
