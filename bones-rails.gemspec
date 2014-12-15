@@ -6,8 +6,8 @@ require File.expand_path('../lib/bones/rails/version', __FILE__)
 Gem::Specification.new do |spec|
   spec.name          = "bones-rails"
   spec.version       = Bones::VERSION
-  spec.authors       = ["Sean C. Davis"]
-  spec.email         = ["sean@rocktreedesign.com"]
+  spec.authors       = ["Sean C Davis"]
+  spec.email         = ["sean@rocktree.us"]
   spec.description   = ""
   spec.summary       = ""
   spec.homepage      = ""
@@ -19,6 +19,8 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
   
   spec.add_dependency "sass"
+  spec.add_dependency "sass-rails"
+  spec.add_dependency "bourbon"
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
 end
